@@ -52,6 +52,14 @@
                 {% embed "module.html.twig" with {'title' : 'Comment and Enter', 'description' : 'Creates a button on the giveaway page that allows you to both post your message and enter the giveaway. Saving time!', 'name' : 'CommentAndEnter'} %}
                 {% endembed %}
 
+            {{ macros.heading('Advanced giveaway filtering') }}
+                {% embed "module.html.twig" with {'title' : 'Hide/Remove entered giveaways', 'description' : 'Hide/Remove giveaways you already entered. It gives you a better filtered view of the remaining, yet maybe interesting giveaways.', 'name' : 'FilterEnteredGiveaways'} %}
+                {% endembed %}
+                {% embed "module.html.twig" with {'title' : 'Hide/Remove giveaways by entries count', 'description' : 'Hide/Remove giveaways with higher entry/copy ratio. It gives you a better filtered view of the remaining giveways with less entries.', 'name' : 'FilterByEntriesCount'} %}
+                {% endembed %}
+                {% embed "module.html.twig" with {'title' : 'Highlight giveaways expiring soon', 'description' : 'Highlight in yellow the pending time of giveaways about to expire. This help you target those ones.', 'name' : 'HighlightSoonlyExpiringGiveaways'} %}
+                {% endembed %}
+
             {{ macros.heading('User') }}
                 {% embed "module.html.twig" with {'title' : 'Tagging', 'description' : 'Add personalized tags for different users. (Only visble for you)', 'name' : 'UserTags'} %}
                 {% endembed %}
